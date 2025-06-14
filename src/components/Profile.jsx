@@ -6,10 +6,21 @@ import gav from '../../images/gav.svg'
 import kros from '../../images/kros.svg'
 import s from '../../styles/prof.module.css'
 import { useState, useEffect } from 'react'
+let random = (num) => {
+    let str = 'qazwsxedcrfvtgbyhnujmikolpQAZWSXEDCRFVTGBYHNUJMIKOLP0123456789'
+    let newStr = ''
+    for(let i = 0; i < num; ++i){
+        newStr += Math.floor(Math.random() * str.length)
+    }
+    return newStr
+}
 
 function Profile() {
     const navigate = useNavigate();
     const [orders, setOrders] = useState([]);
+    const [acc, setAcc] = useState(random(7));
+    const [promo, setPromo] = useState(random(9));
+
 
     useEffect(() => {
         const savedOrders = localStorage.getItem('orderHistory');
@@ -46,11 +57,11 @@ function Profile() {
                                 </div>
                                 <div className={s.pod}>
                                     <div className={s.inpt}>
-                                        <button className={s.i}>Igor</button>
+                                        <button className={s.i}>{acc}</button>
                                         <button className={s.i} onClick={showOrderHistory}>
                                             <img className={s.i1} src={gav} alt="" /> История заказов
                                         </button>
-                                        <button className={s.i}>Промокод: #5235</button>
+                                        <button className={s.i}>Промокод: #{promo}</button>
                                     </div>
                                 </div>
                             </div>
