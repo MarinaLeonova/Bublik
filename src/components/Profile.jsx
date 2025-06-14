@@ -10,7 +10,7 @@ let random = (num) => {
     let str = 'qazwsxedcrfvtgbyhnujmikolpQAZWSXEDCRFVTGBYHNUJMIKOLP0123456789'
     let newStr = ''
     for(let i = 0; i < num; ++i){
-        newStr += Math.floor(Math.random() * str.length)
+        newStr += str[Math.floor(Math.random() * str.length)]
     }
     return newStr
 }
