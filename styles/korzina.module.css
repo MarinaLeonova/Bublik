@@ -1,0 +1,485 @@
+.body2 {
+    height: 1200px;
+    background-color: #FFAEC4;
+}
+
+.Big_Boss {
+    padding-top: 100px;
+    padding-left: 500px;
+}
+
+.boss {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 35px;
+    max-width: 600px;
+    padding-top: 100px;
+    font-size: 40px;
+    color: white;
+}
+
+.con_for_nav {
+    display: flex;
+    justify-content: center;
+}
+
+.for_ikonki {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav {
+    width: 400px;
+    height: 100px;
+    border-radius: 33px;
+    background-color: #1D0000CC;
+}
+
+.cart_items {
+    display: flex;
+    justify-content: center;
+}
+
+.remove_btn {
+    background: none;
+}
+
+.crox {
+    cursor: pointer;
+    width: 75px;
+    height: 75px;
+}
+
+.name_and_btn {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+.ops_and_cena {
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+    line-height: 1.5;
+}
+
+.cenab {
+    font-size: 32px;
+}
+
+.ops_cen {
+    width: 250px;
+}
+
+.item_info {
+    border-radius: 51px;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    background-color: #FFECF1;
+}
+
+
+
+.item_image {
+    width: 248px;
+    height: 248px;
+}
+
+.total {
+    text-align: center;
+}
+
+.btn_for_kor {
+    padding: 100px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.btn {
+    width: 363px;
+    height: 100px;
+    border-radius: 35px;
+    background-color: #BF3B56;
+    font-size: 35px;
+    cursor: pointer;
+    box-shadow: 0px 30px 100px rgba(0, 0, 0, 0.432);
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+}
+
+.quantity_input {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #9B99F5;
+
+}
+
+.quantity_btn {
+    width: 30px;
+    height: 30px;
+    background-color: #B1B1B1;
+    border-radius: 30px;
+}
+
+.hell_yaeh {
+    display: flex;
+    justify-content: center;
+
+}
+
+.cart_footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 300px;
+}
+
+.total {
+    font-size: 32px;
+    color: white;
+}
+
+.total1 {
+    font-size: 22px;
+    color: white;
+}
+
+.btn_back {
+    background: none;
+}
+
+.sumachasoidy {
+    color: black;
+    text-decoration: none;
+}
+
+.swiper {
+    display: flex;
+    align-items: center;
+
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+
+}
+
+.mobile_view {
+    display: none;
+}
+
+.kros {
+    display: none;
+}
+
+.btn_back1 {
+    display: none;
+
+}
+
+@media (max-width: 926px) {
+
+    .body2 {
+        height: auto;
+        min-height: 100vh;
+        background-color: #FFAEC4;
+        box-sizing: border-box;
+    }
+
+    
+    .cart_item {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    
+    .item_info {
+        display: none;
+        margin: 0 auto;
+        border-radius: 25px;
+        width: 90%;
+        max-width: 350px;
+        height: auto;
+        padding: 15px;
+        background-color: #FFECF1;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    
+    .Big_Boss {
+        padding-top: 30px;
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    .boss {
+        font-size: 28px;
+        color: white;
+        margin-bottom: 20px;
+    }
+    
+    .mobile_view {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .name1 {
+        margin-bottom: 20px;
+    }
+
+    .cart_item_lex {
+        padding: 30px 10px 10px 10px;
+        max-width: 500px;
+        background-color: #FFECF1;
+        border-radius: 40px;
+        box-shadow: 5px 10px 9px rgba(0, 0, 0, .25);
+    }
+
+    .cart_top {
+        display: flex;
+    }
+
+    .ops_and_cena1 {
+        margin-top: -100px;
+        padding-left: 200px;
+    }
+
+
+    .item_info1 {
+        margin-bottom: 40px;
+        border-radius: 25px;
+        margin-right: 15px;
+        margin-left: 15px;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        padding: 15px;
+        background-color: #FFECF1;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+
+    }
+
+    .kros {
+        display: block;
+        display: flex;
+        justify-content: end;
+        padding-top: 100px;
+    }
+
+
+
+    .item_image1 {
+        width: 150px;
+        height: 200px;
+
+    }
+
+
+    .item_image {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        display: block;
+        margin: 0 auto 15px;
+    }
+
+    .name_and_btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .item_name {
+        font-size: 18px;
+        color: #333;
+        margin: 0;
+        flex: 1;
+    }
+
+    .remove_btn {
+        background: none;
+        border: none;
+        padding: 0;
+        margin-right: 100px;
+
+    }
+
+    .crox {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .ops_and_cena {
+        margin-bottom: 15px;
+    }
+
+    .ops_cen {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 10px;
+    }
+
+    .cenab {
+        font-size: 20px;
+        color: #BF3B56;
+        font-weight: bold;
+    }
+
+
+    .quantity_controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .quantity_btn {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #B1B1B1;
+        border: none;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .quantity_input {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #9B99F5;
+        border: none;
+        text-align: center;
+        font-size: 16px;
+    }
+
+
+    .btn_for_kor {
+
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        height: 70px;
+        border-radius: 35px;
+        background-color: #BF3B56;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+
+    .cart_footer {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .total,
+    .total1 {
+        color: white;
+        text-align: center;
+    }
+
+    .total {
+        font-size: 24px;
+    }
+
+    .total1 {
+
+        font-size: 18px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .btn_back1 {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .swiwer-container {
+        display: none;
+        margin-left: -1000px !important;
+
+    }
+
+
+
+    .swiper_slide {
+        display: none;
+        margin-left: 500px !important;
+
+    }
+
+    .swiper-3d .swiper-wrapper {
+        display: none;
+        margin-left: -300px;
+    }
+
+
+    .desktop_view {
+        display: none;
+    }
+
+
+
+
+
+    .swiper-pagination {
+        display: none;
+        position: relative;
+        margin-top: 1000px;
+        display: none;
+
+
+    }
+
+    .swiper-pagination-bullet {
+        display: none;
+        display: none;
+        width: 100px;
+        height: 1000px;
+    }
+
+    .swiper-pagination-bullet-active {
+        display: none;
+        display: none;
+        opacity: 1;
+        background: #BF3B56;
+    }
+
+
+}

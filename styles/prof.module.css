@@ -1,0 +1,238 @@
+.body3 {
+    margin: 0px;
+    height: 1400px;
+    background-color: #FFE8EE;
+
+}
+
+.container {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.block {
+
+    width: 1000px;
+    height: 689px;
+    background-color: #FFAEC4;
+    border-radius: 51px;
+}
+
+.txt {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.nas {
+    font-size: 40px;
+}
+
+.pod {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.i1 {
+    padding-top: 10px;
+    width: 25px;
+    height: 25px;
+
+}
+
+
+.i {
+    cursor: pointer;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.404);
+    text-decoration: none;
+    background-color: white;
+    text-align: center;
+    width: 350px;
+    height: 60px;
+    border-radius: 30px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.205);
+}
+
+.inpt {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.div_yaica {
+    padding-top: 300px;
+
+}
+
+.yaica {
+    display: flex;
+    margin-top: -200px;
+    justify-content: space-around;
+    gap: 500px;
+
+}
+
+
+
+.smert {
+    text-align: center;
+    width: 450px;
+    height: 90px;
+    border-radius: 30px;
+    background-color: #BF3B56;
+}
+
+.smert_mimi {
+
+    color: #F9F9F9;
+    font-size: 32px;
+    padding-top: 22px;
+}
+
+.con_for_nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+
+    width: 400px;
+    height: 100px;
+    border-radius: 33px;
+    background-color: #1D0000CC;
+}
+
+.for_ikonki {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn_back {
+    background: none;
+}
+
+.btn_back1 {
+    display: none;
+}
+
+
+@media (min-width: 428px) and (max-width: 926px) {
+    .body3 {
+        margin: 0;
+        height: 100%;
+        background-color: #FFE8EE;
+    }
+
+    .btn_back1 {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        text-decoration: underline;
+        cursor: pointer;
+        margin-top: -40px;
+        padding-left: 380px;
+
+    }
+
+    .container {
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .block {
+        width: 1000px;
+        height: 689px;
+        background-color: #FFAEC4;
+        border-radius: 51px;
+
+
+    }
+
+    .txt {
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .nas {
+        font-size: 40px;
+    }
+
+
+    .block {
+        width: 500px;
+
+    }
+
+    .i1 {
+        padding-top: 10px;
+        width: 25px;
+        height: 25px;
+    }
+
+
+
+    .yaica {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+
+    .smert {
+
+        border-radius: 30px;
+
+        background-color: #BF3B56;
+
+    }
+
+    .smert_mimi {
+        color: #F9F9F9;
+        font-size: 24px;
+        padding-top: 22px;
+    }
+
+
+
+    .con_for_nav {
+        display: none;
+        padding-top: 40px;
+    }
+
+    .nav {
+        display: none;
+        width: auto;
+
+        width: 400px;
+        height: auto;
+
+        border-radius: 33px;
+        background-color: #1D0000CC;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: auto;
+    }
+
+    .for_ikonki {
+        padding-top: auto;
+        display: flex;
+        justify-content: center;
+        gap: auto;
+    }
+
+
+    .btn_back {
+        background: none;
+    }
+}
