@@ -22,12 +22,11 @@ function Pay() {
 
         const orderInfo = {
             orderNumber: Math.floor(Math.random() * 90000) + 10000,
-            address: 'Маршала Жукова д 48',
+            address: 'MOSCOW, STDREAMS, 360 LANE.KOMMUNARKA HOUSE',
             total: total,
             itemsCount: totalItems,
             date: new Date().toLocaleString()
         };
-
 
         const savedOrders = localStorage.getItem('orderHistory');
         const orders = savedOrders ? JSON.parse(savedOrders) : [];

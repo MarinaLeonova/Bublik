@@ -24,10 +24,6 @@ const rout = createBrowserRouter([
         path: '/Pay',
         element: <Pay />,
     },
-
-
-
-
 ]);
 
 export default function Routs() {
