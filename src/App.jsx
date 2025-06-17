@@ -1,7 +1,7 @@
 import { Outlet, NavLink } from "react-router-dom"
 import logo from '../images/logo.svg'
 import Name from '../images/Name.svg'
-import User from '../images/User.svg'
+import User from '../images/user.svg'
 import Bag from '../images/Bag.svg'
 import donat from '../images/donat.svg'
 import Malina from '../images/Malina.svg'
