@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react'
 let random = (num) => {
     let str = 'qazwsxedcrfvtgbyhnujmikolpQAZWSXEDCRFVTGBYHNUJMIKOLP0123456789'
     let newStr = ''
-    for(let i = 0; i < num; ++i){
+    for (let i = 0; i < num; ++i) {
         newStr += str[Math.floor(Math.random() * str.length)]
     }
     return newStr
@@ -51,7 +51,7 @@ function Profile() {
                     <div className={s.q}>
                         <div className={s.block}>
                             <div className={s.txt}>
-                                 <span> <button className={s.btn_back1} onClick={() => navigate(-1)}><NavLink><img src={kros} alt="" /></NavLink></button></span>
+                                <span> <button className={s.btn_back1} onClick={() => navigate(-1)}><NavLink><img src={kros} alt="" /></NavLink></button></span>
                                 <div>
                                     <p className={s.nas}>Настройки </p>
                                 </div>
@@ -101,7 +101,7 @@ function Profile() {
                 </div>
             </div>
 
-           
+
 
 
         </>

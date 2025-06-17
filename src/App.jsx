@@ -30,9 +30,9 @@ import { addItem } from '../src/app/slice';
 const donuts = [
   {
     id: 1,
-    name: "ORANGE SUNSET",
+    name: "PINK PICKNIC",
     price: 2,
-    description: "WITH CHESEE CHOCOLATE FILLING",
+    description: "FILLED WITH MILK CHOHOLATE",
     image: st
   },
   {
@@ -44,9 +44,9 @@ const donuts = [
   },
   {
     id: 3,
-    name: "ORANGE SUNSET",
+    name: "GREEN YUM",
     price: 2,
-    description: "WITH CHESEE CHOCOLATE FILLING",
+    description: "STUFFED WITH DUBAI CHOCOLATE",
     image: gr
   }
 ];
