@@ -1,18 +1,16 @@
 import { Outlet, NavLink } from "react-router-dom"
 import logo from '../images/logo.svg'
 import Name from '../images/Name.svg'
-import User from '../images/user.svg'
+import User from '../images/User.svg'
 import Bag from '../images/Bag.svg'
 import donat from '../images/donat.svg'
 import Malina from '../images/Malina.svg'
 import listik from '../images/listik.svg'
 import htuka from '../images/htuka.svg'
 import bo from '../images/bo.svg'
-import st from '../images/pr.svg'
-import cr from '../images/Cr3.svg'
-import gr from '../images/gr1.svg'
-import ls from '../images/list.svg'
-import ks from '../images/kust.svg'
+import st from '../images/st.png'
+import cr from '../images/cr.png'
+import gr from '../images/gr.png'
 import mgp from '../images/megapon.svg'
 import pnch from '../images/pnch.svg'
 import crambl from '../images/crambl.svg'
@@ -22,6 +20,8 @@ import prof from '../images/prof.svg'
 import strs from '../images/stars.svg'
 import igor from '../images/igor.svg'
 import Do from '../images/Do.svg'
+import leaf from '../images/leaf.png'
+import kust from '../images/kust.png'
 import s from './App.module.css'
 
 import { useDispatch } from 'react-redux';
@@ -30,9 +30,9 @@ import { addItem } from '../src/app/slice';
 const donuts = [
   {
     id: 1,
-    name: "PINK PICKNIC",
+    name: "ORANGE SUNSET",
     price: 2,
-    description: "FILLED WITH MILK CHOHOLATE",
+    description: "WITH CHESEE CHOCOLATE FILLING",
     image: st
   },
   {
@@ -44,9 +44,9 @@ const donuts = [
   },
   {
     id: 3,
-    name: "GREEN YUM",
+    name: "ORANGE SUNSET",
     price: 2,
-    description: "STUFFED WITH DUBAI CHOCOLATE",
+    description: "WITH CHESEE CHOCOLATE FILLING",
     image: gr
   }
 ];
@@ -131,7 +131,7 @@ function App() {
               <img className={s.name_opisanie} src={bo} alt="" />
               <p className={s.opisanie}>Welcome to the world of sweet pleasures! Our donuts are not just a dessert, they are a real art. Each donut, made with love, gives an unforgettable taste and joy.</p>
             </div>
-              <img className={s.Malina} src={Malina} alt="Малина" />
+            <img className={s.Malina} src={Malina} alt="Малина" />
             <div className={s.hero_rigth}>
               <img className={s.donat} src={donat} alt="пончик" />
               <img className={s.htuka} src={htuka} alt="штука" />
@@ -146,21 +146,18 @@ function App() {
 
           <div className={s.container}>
             <div className={s.today}>
-
               <div id="menuRef" className={s.try}>
                 <p className={s.shadow_of_rty}>TRY THEM TODAY!</p>
               </div>
-
-
-
               <div className={s.block_donat}>
-
+                <img className={s.top_list} src={kust} alt="" />
                 <div className={s.donat_kart}>
                   <div className={s.text_donat}>
-                    <img className={s.st} src={st} alt="" />
+                    <div className={s.cont_img}>
+                      <img className={s.don_st} src={st} alt="" />
+                    </div>
                     <div className={s.t}>
-                      <b className={s.bolt_name}>PINK PICKNIC <span className={s.spn}>$2</span> </b>
-
+                      <b>PINK PICKNIC </b> <span className={s.spn}>$2</span>
                     </div>
                     <div className={s.t1}>
                       <p className={s.w}>FILLED WITH MILK CHOHOLATE</p>
@@ -169,11 +166,12 @@ function App() {
                   </div>
                 </div>
                 <div className={s.donat_kart}>
-                  < div className={s.text_donat2}>
-                    <img className={s.st} src={cr} alt="" />
+                  < div className={s.text_donat}>
+                    <div className={s.cont_img}>
+                      <img className={s.don_st} src={cr} alt="" />
+                    </div>
                     <div className={s.t}>
-                      <b className={s.bolt_name}>ORANGE SUNSET <span className={s.spn}>$2</span> </b>
-
+                      <b>ORANGE SUNSET</b> <span className={s.spn}>$2</span>
                     </div>
                     <div className={s.t1}>
                       <p className={s.w}>WITH CHESEE CHOCOLATE FILLING</p>
@@ -182,15 +180,13 @@ function App() {
                   </div>
 
                 </div>
-
-
-
                 <div className={s.donat_kart}>
-                  <div className={s.text_donat3}>
-                    <img className={s.st} src={gr} alt="" />
+                  <div className={s.text_donat}>
+                    <div className={s.cont_img}>
+                      <img className={s.don_st} src={gr} alt="" />
+                    </div>
                     <div className={s.t}>
-                      <b className={s.bolt_name}>GREEN YUM <span className={s.spn}>$2</span> </b>
-
+                      <b>GREEN YUM</b> <span className={s.spn}>$2</span>
                     </div>
                     <div className={s.t1}>
                       <p className={s.w}>STUFFED WITH DUBAI CHOCOLATE</p>
@@ -199,7 +195,7 @@ function App() {
                   </div>
 
                 </div>
-
+                <img className={s.bot_list} src={leaf} alt="" />
               </div>
             </div>
           </div>
@@ -208,16 +204,20 @@ function App() {
             <div className={s.container}>
 
               <div className={s.div_combo}>
-                <div id="comboRef" className={s.div_cmb}>
-                  <h2 className={s.b_combo}>COMBO SET</h2>
+                <div className={s.div_cmb}>
+                  <b id="comboRef" className={s.b_combo}>COMBO SET</b>
                 </div>
 
 
                 <div>
                   <div className={s.con_for_many_donats}>
-            
+                    <div className={s.star1}>
+                      <img src={star} alt="" />
+                    </div>
 
-
+                    <div className={s.star}>
+                      <img src={star} alt="" />
+                    </div>
                     <div className={s.kart_for_many_donats}>
                       <img className={s.img_donat1} src={mgp} alt="" />
                       <div className={s.text_for_many_donats}>
@@ -349,18 +349,10 @@ function App() {
                 </div>
               </div>
             </div>
-
           </div>
           <Outlet />
         </div>
       </div>
-
-
-
-
-
-
-
     </>
 
   )

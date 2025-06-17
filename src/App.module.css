@@ -4,14 +4,12 @@
   text-decoration: none;
   outline: none;
   border: none;
-
 }
 
 .container {
   max-width: 1950px;
   margin: 0 auto;
   padding: 0 15px;
-
 }
 
 .body1 {
@@ -167,60 +165,64 @@
 
 
 .block_donat {
-  padding-top: 150px;
+  position: relative;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 150px;
+  padding-top: 150px;
+  padding-bottom: 60px;
   overflow-y: auto;
   background-repeat: no-repeat;
-  background-image: url('../images/kust.svg');
+}
+
+.top_list {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.bot_list {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .donat_kart {
-  width: 426px;
-  height: 538px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
   border-radius: 30px;
   background-color: #FFFFFF;
   font-size: 16px;
-  display: flex;
-  justify-content: center;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.101);
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.281);
+  z-index: 2;
 }
 
-.st {
-  width: 408px;
-  height: 319px;
-}
-
-.cr {
-  width: 408px;
-  height: 319px;
-}
-
-.gr {
-  width: 408px;
-  height: 319px;
+.don_st {
+  width: 300px;
 }
 
 .text_donat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
   border-radius: 30px;
-  padding-top: 80px;
-  background: #1f9dcf;
-  background: radial-gradient(circle, rgb(216, 150, 196) 0%, rgb(216, 157, 196) 18%, rgba(255, 255, 255, 1) 43%);
 }
 
-.text_donat2 {
-  border-radius: 30px;
-  padding-top: 80px;
-  background: #1f9dcf;
-  background: radial-gradient(circle, rgb(212, 145, 56) 0%, rgb(218, 176, 114) 18%, rgba(255, 255, 255, 1) 43%);
+.donat_kart:nth-child(2) {
+  background: radial-gradient(circle, rgb(216, 150, 196) 0%, rgb(216, 157, 196) 18%, rgba(255, 255, 255, 1) 70%);
+  background-position: 0 -60px;
 }
 
-.text_donat3 {
-  border-radius: 30px;
-  padding-top: 80px;
-  background: #1f9dcf;
-  background: radial-gradient(circle, rgb(173, 223, 169) 0%, rgb(180, 230, 176) 18%, rgba(255, 255, 255, 1) 43%);
+.donat_kart:nth-child(3) {
+  background: radial-gradient(circle, rgb(212, 145, 56) 0%, rgb(218, 176, 114) 18%, rgba(255, 255, 255, 1) 70%);
+  background-position: 0 -60px;
+}
+
+.donat_kart:nth-child(4) {
+  background: radial-gradient(circle, rgb(173, 223, 169) 0%, rgb(180, 230, 176) 18%, rgba(255, 255, 255, 1) 70%);
+  background-position: 0 -60px;
 }
 
 .w {
@@ -228,18 +230,18 @@
 }
 
 .t {
-  font-size: 25px;
-
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 25px;
 }
 
 .t1 {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   font-size: 25px;
-  padding-left: 15px;
-  padding-top: 10px;
-  justify-content: space-around;
 }
 
 .b {
@@ -252,21 +254,14 @@
   font-size: 25px;
 }
 
+.cont_img {
+  height: 310px;
+}
+
 .dol {
   margin-top: -40px;
   color: #F78DCD;
   font-size: 25px;
-}
-
-.lstk {
-  position: absolute;
-  left: 1672px;
-  top: 1000px;
-}
-
-.kust {
-  position: absolute;
-  top: 1730px;
 }
 
 .bolt_name {
@@ -277,7 +272,6 @@
 .div_combo {
   background-color: #FFECF1;
   padding-bottom: 60px;
-
 }
 
 .section2 {
@@ -301,12 +295,29 @@
 
 .kart_for_many_donats {
   padding-top: 100px;
+  z-index: 2;
 }
 
 .con_for_many_donats {
+  position: relative;
   display: flex;
   justify-content: space-around;
-  overflow-y: auto;
+  padding-bottom: 30px;
+  overflow-x: auto;
+  background: radial-gradient(#F6F6F6, rgba(0, 0, 0, 0));
+  z-index: 2;
+}
+
+.star1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.star {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .text_for_many_donats {
@@ -361,16 +372,7 @@
   height: 470px;
 }
 
-.star1 {
-  position: absolute;
-  left: 100px;
-}
 
-.star {
-  position: absolute;
-  left: 1700px;
-  top: 2880px;
-}
 
 .sadnk {
   margin: 0;
@@ -475,6 +477,7 @@
   height: 70%;
   background-repeat: no-repeat;
   background-image: url('../images/nmbk.svg');
+  background-position: center;
 }
 
 .back_of_otz {
